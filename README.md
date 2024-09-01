@@ -31,20 +31,33 @@
 
 ## Creating file structure :
     graphql/
-        ├── graphql.js
-        ├── index.html
-        ├── profile.html
-        ├── style.css
-        ├── assets
-            ├── loginScript.js
-            ├── profileScript.js
-            └── graphql.js
+        ├── README.md
+        ├── run.js
+        └── assets
+            ├── css
+                └── style.css
+            ├── html
+                ├── login.html
+                └── profile.html
+            └── js
+                ├── auditSVG.js
+                ├── authGraphQL.js
+                ├── fetch-data.js
+                ├── logout.js
+                ├── passFailSVG.js
+                ├── progressSVG.js
+                ├── storeToken.js
+                └── xpGainedSVG.js
+                
+            
+            
 
 ## Hosting : 
     Github Pages
 
 ## Logic :
-### Login : 
+ 
     1. Authenticate using the token.
     2. Fetch user data.
     3. Verify the fetched username against the provided username.
+    4. store the token retrieved to fetch the data for the profile page.
