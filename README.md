@@ -31,11 +31,11 @@
 
 ## Creating file structure :
     graphql/
+        ├── graphql.js
         ├── index.html
-        ├── login.html
         ├── profile.html
         ├── style.css
-        ├── js
+        ├── assets
             ├── loginScript.js
             ├── profileScript.js
             └── graphql.js
