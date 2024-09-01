@@ -13,11 +13,10 @@
     10. Granular Errors: Returns errors specific to fields in the query, allowing clients to handle partial successes.
     11. Introspective Schema: Tools can introspect the schema to provide documentation and type safety, aiding development.
 
-# Authors :
-  - Hawra AlFaraj
+
 
 ## Installing graphql & requirements :
-    1. install nodejs
+    1. install nodejs or just open the live server
     2. install graphql :
         npm init
         npm install graphql --save
@@ -25,14 +24,27 @@
     3. install apollo client for graphql query :
         npm install @apollo/client graphql
 
+
+    for testing : 
+        npm install express
+        
+
 ## Creating file structure :
     graphql/
         ├── index.html
         ├── login.html
         ├── profile.html
-        ├── graphql.js
         ├── style.css
-        └── script.js
+        ├── js
+            ├── loginScript.js
+            ├── profileScript.js
+            └── graphql.js
 
 ## Hosting : 
-    Netlify
+    Github Pages
+
+## Logic :
+### Login : 
+    1. Authenticate using the token.
+    2. Fetch user data.
+    3. Verify the fetched username against the provided username.
