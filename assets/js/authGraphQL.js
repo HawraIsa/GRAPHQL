@@ -1,30 +1,4 @@
-// export async function getData(username, password) {
-//   const url = 'https://learn.reboot01.com/api/auth/signin';
-//   const response = await fetch(url, {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json',
-//       Authorization: `Bearer ${btoa(username + ":" + password)}` // encrypt username & password with base 64 encoding
-//     },
-//   });
 
-//   if (!response.ok) { // if there is no response
-//     const errorData = await response.json(); // get error data 
-    
-//     throw new Error(errorData.message || 'Login failed: wrong username or password.');
-//     console.error('error:', errorData.message); // print login error with Login failed message
-//   }
-
-//   // declare dat variable and get it from json response
-//   const data = await response.json();
-//   // print the data in the response (access token)
-//   console.log('Login response:', data);
-
-//   return data;
-
-// } 
-
-// getData('halfaraj', '#Num2Lock')
 
 export async function getData(username, password) {
     const url = 'https://learn.reboot01.com/api/auth/signin';
